@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import './Utils.scss'
+import React from "react";
+import "./Styles/Main.scss";
+import { LoginProvider } from "./Context/LoginContext";
+import Router from "./Components/Router";
 
 function App() {
-
   return (
-    <div className="App">
-      <h1>asdasdasdassa</h1>
-    </div>
-  )
+    <LoginProvider>
+      <Router />
+    </LoginProvider>
+  );
 }
 
-export default App
+export default App;
